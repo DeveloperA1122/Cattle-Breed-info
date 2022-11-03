@@ -1,0 +1,285 @@
+@charset "utf-8";
+body {
+	margin: 0px auto;
+	padding: 0;
+	color: #000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	background-image: url(images/Design/bgwrapper.jpg);
+	background-color: #ccf2a5;
+	background-position: top;
+
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+ h2, h3, h4, h5, h6{
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h1
+{
+	color:#153A64;
+	font-size:24px;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	color: #fffff0;
+	
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FFFFFF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+	color: #FFFFCC;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 1010px; /* the auto value on the sides, coupled with the width, centers the layout */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #70d00b;
+
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	background-repeat: no-repeat;
+
+	
+}
+.botany1
+{
+	background-color:#dbe5f1;
+	
+}
+.botany
+{
+	background:url(Images/Design/cb1.png) no-repeat top left;
+	background-color:#feffe9;
+	padding-top:50px;
+	padding-left:40px;
+}
+.botanyfont
+{
+	font-size: 14px;
+	color: #000;
+	font-family: "Arial Unicode MS";
+	/*border:3px solid #CCFF66;*/
+}
+	ul
+	{
+	padding-left:20px;
+	text-align: justify;
+	font-size:13px;
+	}
+	ol
+	{
+			padding-left:20px;
+	}
+.botanybullet
+{
+	padding-left:40px;
+	padding-right:10px;
+	text-align: justify;
+	font-size:13px;
+}
+.climate
+{
+	background:url(Images/Design/cb2.png) no-repeat top left;
+	background-color:#feffe9;
+	padding-top:100px;
+	padding-left:100px;
+	
+}
+.menubg
+{
+	background:url(Images/Design/button.png) no-repeat;
+	width:200;
+	height:65;
+	font-family:Times New Roman;
+	font-size:18px;
+	color:#ffffff;
+	line-height:1;
+	font-weight: bold;
+	
+}
+.menubg1
+{
+	background:url(Images/Design/button2.png) no-repeat;
+	width:200;
+	height:65;
+	font-family:Times New Roman;
+	font-size:20px;
+	color:#ffffff;
+	line-height:1;
+	font-weight: bold;
+	
+}
+
+.sprymenubg
+{
+	
+	background-color:#FC6;	
+	font-family:Times New Roman;
+	font-size:18px;
+	color: #000;
+	
+}
+.season
+{
+	background:url(Images/Design/seasonvariety.png) no-repeat top left;
+	background-color:#feffe9;
+	padding-top:50px;
+	padding-left:25px;
+}
+.riceecosys
+{
+	background:url(Images/Design/riceecosys.png) no-repeat top left;
+	padding-top:100px;
+	padding-left:20px;	
+}
+.nurserymgmt
+{
+	background:url(Images/Design/cnurserymgmt.png) no-repeat top left;
+	padding-top:100px;
+	padding-left:20px;	
+}
+.cultprac
+{
+	background:url(Images/Design/cclt.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:20px;
+	text-align:justify;
+}
+.nutrient
+{
+background:url(Images/Design/cnut.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:20px;
+	text-align:justify;
+}
+.farmimp
+{
+background:url(Images/Design/cfarm.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:30px;
+	text-align:justify;
+}
+.phtc
+{
+background:url(Images/Design/cpht.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:30px;
+	text-align:justify;
+}
+.market
+{
+background:url(Images/Design/cmar.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:30px;
+	text-align:justify;
+}
+.intsch
+{
+background:url(Images/Design/cins.png) no-repeat top left;
+	padding-top:50px;
+	padding-left:30px;
+	text-align:justify;
+}
+.tableborder
+{
+	border:1px solid #CCCCCC;
+}
+
+.ahref
+{
+	color:#00F;
+	text-decoration:underline;
+}
+
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	text-align:center;
+	color:#5a5b5a;
+	font-size:12px;
+	height: 65px;
+	/*background: #518306;*/
+	background:url(Images/Design/footerbg.jpg)
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+	
+}
+.container .content .botanyfont tr .croppro table tr td b font b {
+	color: #FF0;
+}
+.container .content .botanyfont tr .croppro table tr td div {
+	color: #800000;
+}
+.container .content .botanyfont tr .croppro table tr td b font {
+	color: #FF0;
+}
+.container .content .botanyfont tr .croppro table tr td b font {
+	color: #FF0;
+}
+.container .content .botanyfont tr .croppro table tr td font b {
+	color: #FF0;
+}
+tr td p font b {
+	color: #804040;
+}
+b {
+	color: #804040;
+}
+tr td marquee font b {
+	color: #FFF;
+}
+
+td a b {
+	color: #FF0;
+}
+tr td a font b {
+	color: #000;
+}
